@@ -1,17 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Text Editor</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    <section>
-        <h1>My Text Editor</h1>
-        <div>
-
+    <script
+      src="https://kit.fontawesome.com/08a0a3c52e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="w-3/5 mx-auto mt-12 py-6 px-32 rounded-xl bg-sky-300">
+      <h1 class="text-4xl text-center font-semibold mb-6">My Text Editor</h1>
+      <div class="border-2 p-4 bg-blue-300 border-indigo-500">
+        <div class="py-4 border-b-2 border-indigo-500 flex items-center justify-between">
+          <div>
+            <button class="hover:bg-stone-50 p-2 rounded-lg me-4">
+              <i class="fa-solid fa-bold" style="color: #000000"></i>
+            </button>
+            <button class="hover:bg-stone-50 p-2 rounded-lg me-4">
+              <i class="fa-solid fa-italic"></i>
+            </button>
+            <button class="hover:bg-stone-50 p-2 rounded-lg me-4">
+              <i class="fa-solid fa-underline"></i>
+            </button>
+          </div>
+          <!-- align -->
+          <div>
+            <button class="hover:bg-stone-50 p-2 rounded-lg me-4">
+                <i class="fa-solid fa-align-left"></i>
+            </button>
+            <button class="hover:bg-stone-50 p-2 rounded-lg me-4">
+                <i class="fa-solid fa-align-center"></i>
+            </button>
+            <button class="hover:bg-stone-50 p-2 rounded-lg me-4">
+                <i class="fa-solid fa-align-right"></i>
+            </button>
+            <button class="hover:bg-stone-50 p-2 rounded-lg me-4">
+                <i class="fa-solid fa-align-justify"></i>
+            </button>
+          </div>
+          <!-- size and color -->
+          <div>
+            <input class="w-12 p-2 rounded-lg me-4" type="number" value="12" name="" id="">
+            <button class="hover:bg-stone-50 p-2 rounded-lg me-4">
+                aA
+            </button>
+            <input class="rounded-lg" type="color" name="" value="#321545" id="">
+          </div>
         </div>
+        <!-- textarea -->
+        <div class="pt-3">
+          <textarea class="p-8" name="" id="" cols="106" rows="10"></textarea>
+        </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>
